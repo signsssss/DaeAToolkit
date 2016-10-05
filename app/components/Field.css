@@ -1,0 +1,70 @@
+.field {
+    height: 100%;
+    margin-left: 4%;
+}
+
+.nonStyled {
+    display: block;
+    margin: 10px 0 0 0;
+    float: left;
+    padding: 3.5px;
+}
+
+.nonStyled span {
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 0.80vw;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.checkboxStyled {
+    display: block;
+    margin: 10px 0 0 0;
+    float: left;
+    padding: 3.5px;
+}
+.checkboxStyled input[type="checkbox"] {
+    display: none;
+}
+.checkboxStyled input[type="checkbox"] + span {
+    text-transform: uppercase;
+    text-align: center;
+    cursor: text;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    -moz-transition: background 0.1s ease-in;
+    -o-transition: background 0.1s ease-in;
+    -webkit-transition: background 0.1s ease-in;
+    transition: background 0.1s ease-in;
+    font-size: 0.80vw;
+    font-weight: 550;
+}
+.checkboxStyled input[type="checkbox"] + span:hover {
+    background: rgba(255,95,64,0.6);
+}
+.checkboxStyled input[type="checkbox"] + span:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -12px;
+    font-size: 55px;
+    display: block;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.checkboxStyled input[type="checkbox"]:checked + span {
+    background: rgba(244,67,54,1);
+    color: rgba(255,245,245,1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

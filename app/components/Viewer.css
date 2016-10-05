@@ -1,0 +1,29 @@
+.viewer {
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    font-weight: normal;
+    flex: 1.4;
+    overflow-y: auto;
+}
+
+.viewer h3 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.line {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: monospace;;
+}
+
+.line:nth-child(odd) {
+    background-color: rgba(144,188,197,0.2);
+}
+
+.line:hover {
+    background-color: rgba(255, 238, 156, 1);
+}

@@ -1,0 +1,33 @@
+.item {
+    display: block;
+    margin-top: 30px;
+}
+
+.item input {
+    background: transparent;
+    border: none;
+    font-size: 1.0vw;
+    font-weight: 200;
+    text-align: center;
+    cursor: text;
+    background-color: #EFEFEF;
+    width: 70%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.item input:focus {
+    outline: none;
+    background-color: rgba(255, 238, 156, 1);
+}
+
+.item .header {
+    font-weight: 600;
+    background-color: rgba(144,188,197,0.32);
+    width: 30%;
+}
+
+.item .header:focus {
+    background-color: rgba(244,67,54,1);
+    color: rgba(255,245,245,1);
+}

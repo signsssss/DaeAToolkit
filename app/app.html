@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Hello Electron React!</title>
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../node_modules/metro-dist/css/metro.min.css" />
+    <link rel="stylesheet" href="utils/photon/css/photon.min.css" />
     <script>
-      (function() {
+    (function() {
         if (!process.env.HOT) {
-          const link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = '../dist/style.css';
-          document.write(link.outerHTML);
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = '../dist/style.css';
+            document.write(link.outerHTML);
         }
-      }());
+    }());
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <div id="root"></div>
     <script>
-      (function() {
+    (function() {
+        // const remote = require('electron').remote;
+        // const electronFs = remote.require('fs');
+        // console.log(electronFs);
+
         const script = document.createElement('script');
         script.src = (process.env.HOT) ? 'http://localhost:3000/dist/bundle.js' : '../dist/bundle.js';
         document.write(script.outerHTML);
-      }());
+    }());
     </script>
-  </body>
+</body>
 </html>
